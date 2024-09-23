@@ -26,11 +26,11 @@ const planAheadItems = [
   ];
   
   // Get the plan ahead section element
-  //const planAheadSection = document.querySelector('#plan-ahead-section');
+  const planAheadSection = document.querySelector('#plan-ahead-section');
   
   // Create and append the plan ahead items
-  //planAheadItems.forEach((item) => {
-    //const itemElement = document.createElement('div');
-    //itemElement.classList.add('card', 'bg-base-100', 'shadow-xl')
-    //console.log(item);
-//})
+  planAheadItems.forEach((item) => {
+    const itemElement = document.createElement('div');
+    itemElement.classList.add('card', 'bg-base-100', 'shadow-xl')
+    console.log(item);
+})
