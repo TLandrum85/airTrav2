@@ -33,4 +33,4 @@ const planAheadItems = [
     const itemElement = document.createElement('div');
     itemElement.classList.add('card', 'bg-base-100', 'shadow-xl')
     console.log(item);
-})
+ })
