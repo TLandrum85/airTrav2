@@ -94,6 +94,7 @@
     height: 100%;
     border-radius: 9999px;
     position: relative;
+    width: 40%;
 }
 
 .progress-knob {
