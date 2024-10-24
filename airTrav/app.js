@@ -24,7 +24,7 @@ const planAheadItems = [
     { title: 'Get travelers insurance', action: 'Get Insurance' },
     { title: 'Buy plane tickets', action: 'Buy tickets' },
   ];
-  
+  sssssssss
   // Get the plan ahead section element
   const planAheadSection = document.querySelector('#plan-ahead-section');
   
@@ -34,3 +34,18 @@ const planAheadItems = [
     itemElement.classList.add('card', 'bg-base-100', 'shadow-xl')
     console.log(item);
  })
+
+ const API_URL = "https://api.openweathermap.org/data/2.5/weather?q=Boston"
+ const API_KEY = "07e6b5c8846468b633a7686bbd63780d"
+
+ const forecastSection = document.querySelector('#forecast');
+
+ fetch("https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=07e6b5c8846468b633a7686bbd63780d&units=imperial")
+   .then(function(response) {
+     return response.json();
+   })
+   .then(function(data) {
+     console.log(data);
+ 
+     const allForecasts = data.list;
+     const dailyForecasts = {};
